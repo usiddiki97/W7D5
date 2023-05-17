@@ -3,15 +3,12 @@
 		<ul>
 			<li id="sections-sidebar-btn">
 				<i class="fa fa-bars"></i>
-				<button>
-					<span>sections</span>
-				</button>
+				<span>sections</span>
+				<%= render partial: 'shared/sections_sidebar'%>
 			</li>
 			<li id="search-modal-btn">
 				<i class="fa fa-search"></i>
-				<button>
-					<span>search</span>
-				</button>
+				<span>search</span>
 			</li>
 		</ul>
 	</nav>
@@ -23,9 +20,9 @@
 			<li>
 				<button>Log In</button>
 			</li>
-			<li>
-				<button id="gear-icon" ><i class="fas fa-cogs"></i></button>
-				<!--<%= render partial:"shared/gear_dropdown" %> -->
+			<li id="gear-dropdown-btn">
+				<i class="fas fa-cog"></i>
+				<%= render partial: 'shared/gear_dropdown' %>
 			</li>
 		</ul>
 	</nav>
